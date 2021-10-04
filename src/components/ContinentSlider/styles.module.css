@@ -1,0 +1,15 @@
+.continentSlider {
+  --swiper-navigation-color: var(--chakra-colors-highlight);
+  --swiper-pagination-color: var(--chakra-colors-highlight);
+  --swiper-pagination-bullet-inactive-color: var(--chakra-colors-info-dark);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-navigation-size: 1rem;
+  --swiper-pagination-bullet-size: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .continentSlider {
+    --swiper-navigation-size: 2rem;
+    --swiper-pagination-bullet-size: 1rem;
+  }
+}

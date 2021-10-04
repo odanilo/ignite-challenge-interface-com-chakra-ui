@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import { Categories } from '../components/Categories';
 import { ContinentSlider } from '../components/ContinentSlider';
 import { Header } from '../components/Header';
@@ -7,9 +8,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Categories />
-      <ContinentSlider />
+      <Box as="main" mb={['6', '10']}>
+        <Hero />
+        <Categories />
+        <ContinentSlider />
+      </Box>
     </>
   );
 }

@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Virtual } from 'swiper';
-import { Flex, Text, Spinner } from '@chakra-ui/react';
+import { Box, Flex, Spinner } from '@chakra-ui/react';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { ContinentSliderHeader } from './ContinentSliderHeader';
+import { ContinentSliderContent } from './ContinentSliderContent';
+import { ContinentSliderError } from './ContinentSliderError';
 
 type Continent = {
   description: string;
@@ -19,7 +17,6 @@ type Status = 'LOADING' | 'ERROR' | 'SUCCESS';
 export function ContinentSlider() {
   const [continents, setContinents] = useState<Continent[] | null>(null);
   const [status, setStatus] = useState<Status>('LOADING');
-  console.log(continents);
 
   useEffect(() => {
     try {
@@ -35,26 +32,22 @@ export function ContinentSlider() {
   }, []);
 
   if (status === 'LOADING') {
-    return <Spinner />;
-  }
-
-  if (status === 'SUCCESS' && continents !== null) {
     return (
-      <Flex as="section">
-        <Swiper
-          modules={[Navigation, Pagination, Virtual]}
-          pagination={{ clickable: true }}
-          navigation
-        >
-          {continents.map((continent, index) => (
-            <SwiperSlide key={continent.id} virtualIndex={index}>
-              {continent.name}
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <Flex align="center" justify="center" minH="250px">
+        <Spinner />
       </Flex>
     );
   }
 
-  return <Text>Falha ao acessar continentes, por favor tente novamente</Text>;
+  if (status === 'SUCCESS' && continents !== null) {
+    return (
+      <Box as="section" mt={['9', '20']}>
+        <ContinentSliderHeader />
+
+        <ContinentSliderContent continents={continents} />
+      </Box>
+    );
+  }
+
+  return <ContinentSliderError />;
 }
