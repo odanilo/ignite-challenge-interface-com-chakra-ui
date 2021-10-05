@@ -1,4 +1,5 @@
 import { createServer, Model } from 'miragejs';
+import { cities, City } from './cities';
 
 type Continent = {
   description: string;
@@ -50,11 +51,16 @@ export function makeServer() {
   const server = createServer({
     models: {
       continent: Model.extend<Partial<Continent>>({}),
+      city: Model.extend<Partial<City>>({}),
     },
 
     seeds(server) {
       continents.forEach(continent => {
         server.create('continent', continent);
+      });
+
+      cities.forEach(city => {
+        server.create('city', city);
       });
     },
 
@@ -62,8 +68,15 @@ export function makeServer() {
       this.namespace = 'api';
       this.timing = 750;
 
-      this.get('/continents', schema => {
-        return schema.continents.all();
+      this.get('/continents');
+      this.get('/cities', (schema, request) => {
+        const slug = request.queryParams.slug;
+
+        if (slug) {
+          return schema.cities.where({ continentSlug: slug });
+        }
+
+        return schema.cities.all();
       });
 
       this.namespace = '';
