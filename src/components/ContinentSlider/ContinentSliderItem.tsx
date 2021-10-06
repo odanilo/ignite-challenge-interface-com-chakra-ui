@@ -4,7 +4,7 @@ import { SwiperSlide } from 'swiper/react';
 import { Flex, Heading, Text, Link as ChakraLink } from '@chakra-ui/react';
 
 interface Continent {
-  description: string;
+  summary: string;
   id: string;
   name: string;
   slug: string;
@@ -67,7 +67,7 @@ export function ContinentSliderItem({
               {continent.name}
             </Heading>
             <Text color="info.light" fontSize={['md', '2xl']} fontWeight="bold">
-              {continent.description}
+              {continent.summary}
             </Text>
           </Flex>
         </ChakraLink>

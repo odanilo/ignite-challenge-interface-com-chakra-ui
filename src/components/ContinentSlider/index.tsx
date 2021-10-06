@@ -6,7 +6,7 @@ import { ContinentSliderContent } from './ContinentSliderContent';
 import { ContinentSliderError } from './ContinentSliderError';
 
 type Continent = {
-  description: string;
+  summary: string;
   id: string;
   name: string;
   slug: string;

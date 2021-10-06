@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import styles from './styles.module.css';
 
 interface Continent {
-  description: string;
+  summary: string;
   id: string;
   name: string;
   slug: string;
