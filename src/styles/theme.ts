@@ -15,6 +15,7 @@ export const theme = extendTheme({
       light: '#DADADA',
     },
     highlight: '#FFBA08',
+    borderHighlight: 'rgba(255, 168, 8, 0.5)',
   },
   fonts: {
     heading: '"Poppins", sans-serif',

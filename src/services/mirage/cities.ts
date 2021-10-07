@@ -22,7 +22,7 @@ export const cities: City[] = [
     rank: 3,
     name: 'London',
     country: 'United Kingdom',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 4,
@@ -40,7 +40,7 @@ export const cities: City[] = [
     rank: 6,
     name: 'Paris',
     country: 'France',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 7,
@@ -64,7 +64,7 @@ export const cities: City[] = [
     rank: 10,
     name: 'Istanbul',
     country: 'Turkey',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 11,
@@ -76,7 +76,7 @@ export const cities: City[] = [
     rank: 12,
     name: 'Antalya',
     country: 'Turkey',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 13,
@@ -100,7 +100,7 @@ export const cities: City[] = [
     rank: 16,
     name: 'Rome',
     country: 'Italy',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 17,
@@ -136,7 +136,7 @@ export const cities: City[] = [
     rank: 22,
     name: 'Prague',
     country: 'Czechia',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 23,
@@ -154,7 +154,7 @@ export const cities: City[] = [
     rank: 25,
     name: 'Amsterdam',
     country: 'Netherlands',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 26,
@@ -202,7 +202,7 @@ export const cities: City[] = [
     rank: 33,
     name: 'Barcelona',
     country: 'Spain',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 34,
@@ -214,7 +214,7 @@ export const cities: City[] = [
     rank: 35,
     name: 'Milan',
     country: 'Italy',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 36,
@@ -250,7 +250,7 @@ export const cities: City[] = [
     rank: 41,
     name: 'Berlin',
     country: 'Germany',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 42,
@@ -262,7 +262,7 @@ export const cities: City[] = [
     rank: 43,
     name: 'Athens',
     country: 'Greece',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 44,
@@ -274,19 +274,19 @@ export const cities: City[] = [
     rank: 45,
     name: 'Moscow',
     country: 'Russia',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 46,
     name: 'Venice',
     country: 'Italy',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 47,
     name: 'Madrid',
     country: 'Spain',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 48,
@@ -304,13 +304,13 @@ export const cities: City[] = [
     rank: 50,
     name: 'Dublin',
     country: 'Ireland',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 51,
     name: 'Florence',
     country: 'Italy',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 52,
@@ -340,7 +340,7 @@ export const cities: City[] = [
     rank: 56,
     name: 'Munich',
     country: 'Germany',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 57,
@@ -358,13 +358,13 @@ export const cities: City[] = [
     rank: 59,
     name: 'St. Petersburg',
     country: 'Russia',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 60,
     name: 'Brussels',
     country: 'Belgium',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 61,
@@ -376,13 +376,13 @@ export const cities: City[] = [
     rank: 62,
     name: 'Budapest',
     country: 'Hungary',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 63,
     name: 'Lisbon',
     country: 'Portugal',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 64,
@@ -400,7 +400,7 @@ export const cities: City[] = [
     rank: 66,
     name: 'Heraklion',
     country: 'Greece',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 67,
@@ -430,7 +430,7 @@ export const cities: City[] = [
     rank: 71,
     name: 'Copenhagen',
     country: 'Denmark',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 72,
@@ -502,13 +502,13 @@ export const cities: City[] = [
     rank: 83,
     name: 'Warsaw',
     country: 'Poland',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 84,
     name: 'Mugla',
     country: 'Turkey',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 85,
@@ -526,13 +526,13 @@ export const cities: City[] = [
     rank: 87,
     name: 'Frankfurt',
     country: 'Germany',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 88,
     name: 'Stockholm',
     country: 'Sweden',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 89,
@@ -556,7 +556,7 @@ export const cities: City[] = [
     rank: 92,
     name: 'Nice',
     country: 'France',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 93,
@@ -580,13 +580,13 @@ export const cities: City[] = [
     rank: 96,
     name: 'Porto',
     country: 'Portugal',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 97,
     name: 'Rhodes',
     country: 'Greece',
-    continentSlug: 'europe',
+    continentSlug: 'europa',
   },
   {
     rank: 98,
