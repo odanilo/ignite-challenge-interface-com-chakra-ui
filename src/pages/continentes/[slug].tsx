@@ -90,7 +90,7 @@ export default function Continent({ slug }: ContinentProps) {
     <>
       <Header />
       <Box as="header" pos="relative">
-        <Flex position="relative" p={['4', '7']} minH={150} mx="auto" w="100%">
+        <Flex position="relative" minH={[150, 150, 500]} w="100%">
           <Box pos="absolute" w="100%" height="100%" left="0" top="0">
             <Image
               src={`/continents/page/${continent.slug}.jpg`}
@@ -106,113 +106,154 @@ export default function Continent({ slug }: ContinentProps) {
               opacity="0.5"
             ></Flex>
           </Box>
-          <Flex pos="relative" align="center" justify="center" w="100%">
-            <Heading as="h1" color="white">
+          <Flex
+            pos="relative"
+            align={['center', 'center', 'flex-end']}
+            justify={['center', 'center', 'flex-start']}
+            w="100%"
+          >
+            <Heading
+              as="h1"
+              color="white"
+              w="100%"
+              maxW={1160}
+              mx="auto"
+              px={['4', '4', '7']}
+              py={['4', '4', '16']}
+              fontSize={['3xl', '3xl', '5xl']}
+              textAlign={['center', 'center', 'left']}
+            >
               {continent.name}
             </Heading>
           </Flex>
         </Flex>
 
         <Flex
-          px={['4', '7']}
+          direction={['column', 'column', 'row']}
+          px={['4', '4', '7']}
           maxW={1160}
           mx="auto"
-          mt="6"
-          w="100%"
-          color="heading.dark"
-          textAlign="justify"
+          mt={['6', '6', '20']}
+          justify={['flex-start', 'flex-start', 'space-between']}
         >
-          {continent.description}
-        </Flex>
+          <Flex
+            w={['100%', '100%', '48%']}
+            color="heading.dark"
+            fontSize={['md', 'md', '2xl']}
+            textAlign="justify"
+          >
+            {continent.description}
+          </Flex>
 
-        <List
-          px={['4', '7']}
-          maxW={1160}
-          mx="auto"
-          mt="4"
-          w="100%"
-          display="flex"
-        >
-          <Stack spacing="10" direction="row">
-            <ListItem>
-              <Text
-                color="highlight"
-                fontSize="2xl"
-                fontWeight="semibold"
-                lineHeight="1"
-              >
-                {continent.countries_amount}
-              </Text>
-              <Text color="heading.dark" fontSize="lg">
-                países
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                color="highlight"
-                fontSize="2xl"
-                fontWeight="semibold"
-                lineHeight="1"
-              >
-                {continent.languages_amount}
-              </Text>
-              <Text color="heading.dark" fontSize="lg">
-                línguas
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                color="highlight"
-                fontSize="2xl"
-                fontWeight="semibold"
-                lineHeight="1"
-              >
-                {cities.length}
-              </Text>
-              <Flex color="heading.dark" fontSize="lg">
-                <Text display="flex" alignItems="center">
-                  cidades +100
-                  <Tooltip
-                    hasArrow
-                    label={`Quantidade de cidades da ${continent.name} que estão no ranking dos 100 destinos mais visitados em todo mundo.`}
-                    aria-label="O que é +100"
-                  >
-                    <Box
-                      as="span"
-                      color="info.dark"
-                      fontSize="xs"
-                      ml="1"
-                      opacity="0.5"
-                    >
-                      <BsInfoCircle />
-                    </Box>
-                  </Tooltip>
+          <List
+            mt={['4', '4', '0']}
+            w={['100%', '100%', '45%']}
+            display="flex"
+            alignItems="center"
+          >
+            <Stack
+              spacing="10"
+              direction="row"
+              flex="1"
+              justify={['flex-start', 'flex-start', 'space-between']}
+            >
+              <ListItem textAlign={['left', 'left', 'center']}>
+                <Text
+                  color="highlight"
+                  fontSize={['2xl', '2xl', '5xl']}
+                  fontWeight="semibold"
+                  lineHeight="1"
+                >
+                  {continent.countries_amount}
                 </Text>
-              </Flex>
-            </ListItem>
-          </Stack>
-        </List>
+                <Text
+                  color="heading.dark"
+                  fontSize={['lg', 'lg', '2xl']}
+                  fontWeight={['normal', 'normal', 'semibold']}
+                >
+                  países
+                </Text>
+              </ListItem>
+
+              <ListItem textAlign={['left', 'left', 'center']}>
+                <Text
+                  color="highlight"
+                  fontSize={['2xl', '2xl', '5xl']}
+                  fontWeight="semibold"
+                  lineHeight="1"
+                >
+                  {continent.languages_amount}
+                </Text>
+                <Text
+                  color="heading.dark"
+                  fontSize={['lg', 'lg', '2xl']}
+                  fontWeight={['normal', 'normal', 'semibold']}
+                >
+                  línguas
+                </Text>
+              </ListItem>
+
+              <ListItem textAlign={['left', 'left', 'center']}>
+                <Text
+                  color="highlight"
+                  fontSize={['2xl', '2xl', '5xl']}
+                  fontWeight="semibold"
+                  lineHeight="1"
+                >
+                  {cities.length}
+                </Text>
+                <Flex color="heading.dark" fontSize={['lg', 'lg', '2xl']}>
+                  <Text
+                    display="flex"
+                    fontWeight={['normal', 'normal', 'semibold']}
+                    alignItems="center"
+                  >
+                    cidades +100
+                    <Tooltip
+                      hasArrow
+                      label={`Quantidade de cidades da ${continent.name} que estão no ranking dos 100 destinos mais visitados em todo mundo.`}
+                      aria-label="O que é +100"
+                    >
+                      <Box
+                        as="span"
+                        color="info.dark"
+                        fontSize={['xs', 'xs', 'md']}
+                        ml="1"
+                        opacity="0.5"
+                      >
+                        <BsInfoCircle />
+                      </Box>
+                    </Tooltip>
+                  </Text>
+                </Flex>
+              </ListItem>
+            </Stack>
+          </List>
+        </Flex>
       </Box>
 
       <Box
         as="main"
-        px={['4', '7']}
+        px={['4', '4', '7']}
         maxW={1160}
         mx="auto"
-        mt="8"
-        mb="4"
+        mt={['8', '8', '20']}
+        mb={['4', '4', '9']}
         w="100%"
       >
-        <Heading as="h2" fontSize="2xl" fontWeight="medium" lineHeight="1.5">
+        <Heading
+          as="h2"
+          fontSize={['2xl', '2xl', '4xl']}
+          fontWeight="medium"
+          lineHeight="1.5"
+        >
           Cidades +100
         </Heading>
         <List mt="5">
           <Grid
-            gap="5"
+            gap={['5', '5', '6']}
             templateColumns="repeat(auto-fit, 256px)"
-            justifyContent="center"
+            justifyContent={['center', 'center', 'space-between']}
           >
             {cities.map(city => (
               <ListItem key={city.name}>
@@ -234,7 +275,7 @@ export default function Continent({ slug }: ContinentProps) {
                     />
                   </Box>
                   <Flex align="center" justify="space-between" p="6">
-                    <Box>
+                    <Box textAlign="left">
                       <Heading
                         as="h3"
                         color="heading.dark"
