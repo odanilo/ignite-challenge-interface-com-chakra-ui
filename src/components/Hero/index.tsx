@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Box, Flex, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 import { HeroText } from './HeroText';
 import { HeroIllustration } from './HeroIllustration';
 

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { SwiperSlide } from 'swiper/react';
 import { Flex, Heading, Text, Link as ChakraLink } from '@chakra-ui/react';
 
 interface Continent {

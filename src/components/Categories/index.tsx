@@ -1,4 +1,4 @@
-import { Flex, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { CategoriesList } from './CategoriesList';
 
 const data = [

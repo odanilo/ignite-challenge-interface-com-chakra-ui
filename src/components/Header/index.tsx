@@ -8,14 +8,7 @@ export function Header() {
   const isHomePage = asPath === '/';
 
   return (
-    <Flex
-      as="header"
-      p={['4', '7']}
-      align="center"
-      justify="center"
-      maxW={1160}
-      mx="auto"
-    >
+    <Flex p={['4', '7']} align="center" justify="center" maxW={1160} mx="auto">
       {!isHomePage && <HeaderNav />}
       <LogoNav isHomePage={isHomePage} />
     </Flex>
