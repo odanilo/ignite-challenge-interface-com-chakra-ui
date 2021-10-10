@@ -4,9 +4,14 @@ import { Heading, Flex, Box, ListItem, Text, Avatar } from '@chakra-ui/react';
 interface ContinentCityCardProps {
   name: string;
   country: string;
+  photo: string;
 }
 
-export function ContinentCityCard({ name, country }: ContinentCityCardProps) {
+export function ContinentCityCard({
+  name,
+  country,
+  photo,
+}: ContinentCityCardProps) {
   return (
     <ListItem key={name}>
       <Box
@@ -19,7 +24,7 @@ export function ContinentCityCard({ name, country }: ContinentCityCardProps) {
       >
         <Box as="figure" display="flex" background="info.light">
           <Image
-            src={`/cities/${name}.jpg`}
+            src={photo}
             alt={`Photo of ${name}`}
             width={512}
             height={346}

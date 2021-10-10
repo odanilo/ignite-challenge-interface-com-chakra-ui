@@ -31,8 +31,13 @@ export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
           templateColumns="repeat(auto-fit, 256px)"
           justifyContent={['center', 'center', 'space-between']}
         >
-          {cities.map(({ country, name }) => (
-            <ContinentCityCard key={name} country={country} name={name} />
+          {cities.map(({ country, name, photo }) => (
+            <ContinentCityCard
+              key={name}
+              country={country}
+              name={name}
+              photo={photo}
+            />
           ))}
         </Grid>
       </List>
