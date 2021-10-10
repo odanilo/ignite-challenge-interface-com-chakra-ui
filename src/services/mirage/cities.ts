@@ -1,6 +1,9 @@
 export type City = {
   name: string;
-  country: string;
+  country: {
+    name: string;
+    flag: string;
+  };
   continentSlug: string;
   rank: number;
   photo: string;
@@ -10,7 +13,10 @@ export const cities: City[] = [
   {
     rank: 1,
     name: 'Hong Kong',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1531279550271-23c2a77a765c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -18,7 +24,10 @@ export const cities: City[] = [
   {
     rank: 2,
     name: 'Bangkok',
-    country: 'Thailand',
+    country: {
+      name: 'Thailand',
+      flag: '/countries-flags/th.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
@@ -26,7 +35,10 @@ export const cities: City[] = [
   {
     rank: 3,
     name: 'London',
-    country: 'United Kingdom',
+    country: {
+      name: 'United Kingdom',
+      flag: '/countries-flags/gb.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80',
@@ -34,7 +46,10 @@ export const cities: City[] = [
   {
     rank: 4,
     name: 'Macau',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1552912809-6d4240af286b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1197&q=80',
@@ -42,7 +57,10 @@ export const cities: City[] = [
   {
     rank: 5,
     name: 'Singapore',
-    country: 'Singapore',
+    country: {
+      name: 'Singapore',
+      flag: '/countries-flags/sg.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1496939376851-89342e90adcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -50,7 +68,10 @@ export const cities: City[] = [
   {
     rank: 6,
     name: 'Paris',
-    country: 'France',
+    country: {
+      name: 'France',
+      flag: '/countries-flags/fr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1508050919630-b135583b29ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -58,7 +79,10 @@ export const cities: City[] = [
   {
     rank: 7,
     name: 'Dubai',
-    country: 'UAE',
+    country: {
+      name: 'UAE',
+      flag: '/countries-flags/ae.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -66,7 +90,10 @@ export const cities: City[] = [
   {
     rank: 8,
     name: 'New York City',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=695&q=80',
@@ -74,7 +101,10 @@ export const cities: City[] = [
   {
     rank: 9,
     name: 'Kuala Lumpur',
-    country: 'Malaysia',
+    country: {
+      name: 'Malaysia',
+      flag: '/countries-flags/my.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1581792343403-f3201559d559?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=627&q=80',
@@ -82,7 +112,10 @@ export const cities: City[] = [
   {
     rank: 10,
     name: 'Istanbul',
-    country: 'Turkey',
+    country: {
+      name: 'Turkey',
+      flag: '/countries-flags/tr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -90,7 +123,10 @@ export const cities: City[] = [
   {
     rank: 11,
     name: 'Delhi',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1581326693291-ce497c5cf84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=697&q=80',
@@ -98,7 +134,10 @@ export const cities: City[] = [
   {
     rank: 12,
     name: 'Antalya',
-    country: 'Turkey',
+    country: {
+      name: 'Turkey',
+      flag: '/countries-flags/tr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1593238739364-18cfde30e522?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80',
@@ -106,7 +145,10 @@ export const cities: City[] = [
   {
     rank: 13,
     name: 'Shenzhen',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1608381742187-ea4b48c56630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=912&q=80',
@@ -114,7 +156,10 @@ export const cities: City[] = [
   {
     rank: 14,
     name: 'Mumbai',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1566552881560-0be862a7c445?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -122,7 +167,10 @@ export const cities: City[] = [
   {
     rank: 15,
     name: 'Phuket',
-    country: 'Thailand',
+    country: {
+      name: 'Thailand',
+      flag: '/countries-flags/th.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1579683670728-96c9abc7a088?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -130,7 +178,10 @@ export const cities: City[] = [
   {
     rank: 16,
     name: 'Rome',
-    country: 'Italy',
+    country: {
+      name: 'Italy',
+      flag: '/countries-flags/it.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -138,7 +189,10 @@ export const cities: City[] = [
   {
     rank: 17,
     name: 'Tokyo',
-    country: 'Japan',
+    country: {
+      name: 'Japan',
+      flag: '/countries-flags/jp.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
@@ -146,7 +200,10 @@ export const cities: City[] = [
   {
     rank: 18,
     name: 'Pattaya',
-    country: 'Thailand',
+    country: {
+      name: 'Thailand',
+      flag: '/countries-flags/th.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1586098311524-95c1fde90378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -154,7 +211,10 @@ export const cities: City[] = [
   {
     rank: 19,
     name: 'Taipei',
-    country: 'Taiwan',
+    country: {
+      name: 'Taiwan',
+      flag: '/countries-flags/tw.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1470004914212-05527e49370b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80',
@@ -162,7 +222,10 @@ export const cities: City[] = [
   {
     rank: 20,
     name: 'Mecca',
-    country: 'Saudi Arabia',
+    country: {
+      name: 'Saudi Arabia',
+      flag: '/countries-flags/sa.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1592326871020-04f58c1a52f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80',
@@ -170,7 +233,10 @@ export const cities: City[] = [
   {
     rank: 21,
     name: 'Guangzhou',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1559056245-f0e8ae7e0635?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
@@ -178,7 +244,10 @@ export const cities: City[] = [
   {
     rank: 22,
     name: 'Prague',
-    country: 'Czechia',
+    country: {
+      name: 'Czechia',
+      flag: '/countries-flags/cz.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1541849546-216549ae216d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -186,7 +255,10 @@ export const cities: City[] = [
   {
     rank: 23,
     name: 'Medina',
-    country: 'Saudi Arabia',
+    country: {
+      name: 'Saudi Arabia',
+      flag: '/countries-flags/sa.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -194,7 +266,10 @@ export const cities: City[] = [
   {
     rank: 24,
     name: 'Seoul',
-    country: 'South Korea',
+    country: {
+      name: 'South Korea',
+      flag: '/countries-flags/kr.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1617541086271-4d43983704bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80',
@@ -202,7 +277,10 @@ export const cities: City[] = [
   {
     rank: 25,
     name: 'Amsterdam',
-    country: 'Netherlands',
+    country: {
+      name: 'Netherlands',
+      flag: '/countries-flags/nl.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1468436385273-8abca6dfd8d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1105&q=80',
@@ -210,7 +288,10 @@ export const cities: City[] = [
   {
     rank: 26,
     name: 'Agra',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1564507592333-c60657eea523?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -218,7 +299,10 @@ export const cities: City[] = [
   {
     rank: 27,
     name: 'Miami',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
@@ -226,7 +310,10 @@ export const cities: City[] = [
   {
     rank: 28,
     name: 'Osaka',
-    country: 'Japan',
+    country: {
+      name: 'Japan',
+      flag: '/countries-flags/jp.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1589452271712-64b8a66c7b71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -234,7 +321,10 @@ export const cities: City[] = [
   {
     rank: 29,
     name: 'Los Angeles',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -242,7 +332,10 @@ export const cities: City[] = [
   {
     rank: 30,
     name: 'Shanghai',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1567133803606-3601463f3981?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -250,7 +343,10 @@ export const cities: City[] = [
   {
     rank: 31,
     name: 'Ho Chi Minh City',
-    country: 'Vietnam',
+    country: {
+      name: 'Vietnam',
+      flag: '/countries-flags/vn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1602646994030-464f98de5e5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -258,7 +354,10 @@ export const cities: City[] = [
   {
     rank: 32,
     name: 'Denpasar',
-    country: 'Indonesia',
+    country: {
+      name: 'Indonesia',
+      flag: '/countries-flags/id.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1592364395653-83e648b20cc2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -266,7 +365,10 @@ export const cities: City[] = [
   {
     rank: 33,
     name: 'Barcelona',
-    country: 'Spain',
+    country: {
+      name: 'Spain',
+      flag: '/countries-flags/es.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1528744598421-b7b93e12df15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -274,7 +376,10 @@ export const cities: City[] = [
   {
     rank: 34,
     name: 'Las Vegas',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80',
@@ -282,7 +387,10 @@ export const cities: City[] = [
   {
     rank: 35,
     name: 'Milan',
-    country: 'Italy',
+    country: {
+      name: 'Italy',
+      flag: '/countries-flags/it.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1512236077335-f1cda9239c11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -290,7 +398,10 @@ export const cities: City[] = [
   {
     rank: 36,
     name: 'Chennai',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -298,7 +409,10 @@ export const cities: City[] = [
   {
     rank: 37,
     name: 'Vienna',
-    country: 'Austria',
+    country: {
+      name: 'Austria',
+      flag: '/countries-flags/at.svg',
+    },
     continentSlug: 'oceania',
     photo:
       'https://images.unsplash.com/photo-1573167443175-867d91708f97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=681&q=80',
@@ -306,7 +420,10 @@ export const cities: City[] = [
   {
     rank: 38,
     name: 'Johor Bahru',
-    country: 'Malaysia',
+    country: {
+      name: 'Malaysia',
+      flag: '/countries-flags/my.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1518439179742-d8c527d2b607?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80',
@@ -314,7 +431,10 @@ export const cities: City[] = [
   {
     rank: 39,
     name: 'Jaipur',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1477586957327-847a0f3f4fe3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -322,7 +442,10 @@ export const cities: City[] = [
   {
     rank: 40,
     name: 'Cancun',
-    country: 'Mexico',
+    country: {
+      name: 'Mexico',
+      flag: '/countries-flags/mx.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1167&q=80',
@@ -330,7 +453,10 @@ export const cities: City[] = [
   {
     rank: 41,
     name: 'Berlin',
-    country: 'Germany',
+    country: {
+      name: 'Germany',
+      flag: '/countries-flags/de.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1484689228555-fd6bc1b28b7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -338,7 +464,10 @@ export const cities: City[] = [
   {
     rank: 42,
     name: 'Cairo',
-    country: 'Egypt',
+    country: {
+      name: 'Egypt',
+      flag: '/countries-flags/eg.svg',
+    },
     continentSlug: 'africa',
     photo:
       'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -346,7 +475,10 @@ export const cities: City[] = [
   {
     rank: 43,
     name: 'Athens',
-    country: 'Greece',
+    country: {
+      name: 'Greece',
+      flag: '/countries-flags/gr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -354,7 +486,10 @@ export const cities: City[] = [
   {
     rank: 44,
     name: 'Orlando',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1597466599360-3b9775841aec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -362,7 +497,10 @@ export const cities: City[] = [
   {
     rank: 45,
     name: 'Moscow',
-    country: 'Russia',
+    country: {
+      name: 'Russia',
+      flag: '/countries-flags/ru.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1513326738677-b964603b136d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80',
@@ -370,7 +508,10 @@ export const cities: City[] = [
   {
     rank: 46,
     name: 'Venice',
-    country: 'Italy',
+    country: {
+      name: 'Italy',
+      flag: '/countries-flags/it.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -378,7 +519,10 @@ export const cities: City[] = [
   {
     rank: 47,
     name: 'Madrid',
-    country: 'Spain',
+    country: {
+      name: 'Spain',
+      flag: '/countries-flags/es.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1570698473651-b2de99bae12f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80',
@@ -386,7 +530,10 @@ export const cities: City[] = [
   {
     rank: 48,
     name: 'Ha Long',
-    country: 'Vietnam',
+    country: {
+      name: 'Vietnam',
+      flag: '/countries-flags/vn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1605036687969-9c2878c7395b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80',
@@ -394,7 +541,10 @@ export const cities: City[] = [
   {
     rank: 49,
     name: 'Riyadh',
-    country: 'Saudi Arabia',
+    country: {
+      name: 'Saudi Arabia',
+      flag: '/countries-flags/sa.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -402,7 +552,10 @@ export const cities: City[] = [
   {
     rank: 50,
     name: 'Dublin',
-    country: 'Ireland',
+    country: {
+      name: 'Ireland',
+      flag: '/countries-flags/ie.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1518005068251-37900150dfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80',
@@ -410,7 +563,10 @@ export const cities: City[] = [
   {
     rank: 51,
     name: 'Florence',
-    country: 'Italy',
+    country: {
+      name: 'Italy',
+      flag: '/countries-flags/it.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80',
@@ -418,7 +574,10 @@ export const cities: City[] = [
   {
     rank: 52,
     name: 'Ha Noi',
-    country: 'Vietnam',
+    country: {
+      name: 'Vietnam',
+      flag: '/countries-flags/vn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1553851919-596510268b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80',
@@ -426,7 +585,10 @@ export const cities: City[] = [
   {
     rank: 53,
     name: 'Toronto',
-    country: 'Canada',
+    country: {
+      name: 'Canada',
+      flag: '/countries-flags/ca.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1542704792-e30dac463c90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -434,7 +596,10 @@ export const cities: City[] = [
   {
     rank: 54,
     name: 'Johannesburg',
-    country: 'South Africa',
+    country: {
+      name: 'South Africa',
+      flag: '/countries-flags/za.svg',
+    },
     continentSlug: 'africa',
     photo:
       'https://images.unsplash.com/photo-1577948000111-9c970dfe3743?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80',
@@ -442,7 +607,10 @@ export const cities: City[] = [
   {
     rank: 55,
     name: 'Sydney',
-    country: 'Australia',
+    country: {
+      name: 'Australia',
+      flag: '/countries-flags/au.svg',
+    },
     continentSlug: 'oceania',
     photo:
       'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -450,7 +618,10 @@ export const cities: City[] = [
   {
     rank: 56,
     name: 'Munich',
-    country: 'Germany',
+    country: {
+      name: 'Germany',
+      flag: '/countries-flags/de.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1599982890963-3aabd60064d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80',
@@ -458,7 +629,10 @@ export const cities: City[] = [
   {
     rank: 57,
     name: 'Jakarta',
-    country: 'Indonesia',
+    country: {
+      name: 'Indonesia',
+      flag: '/countries-flags/id.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1538582709238-0a503bd5ae04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -466,7 +640,10 @@ export const cities: City[] = [
   {
     rank: 58,
     name: 'Beijing',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -474,7 +651,10 @@ export const cities: City[] = [
   {
     rank: 59,
     name: 'St. Petersburg',
-    country: 'Russia',
+    country: {
+      name: 'Russia',
+      flag: '/countries-flags/ru.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1548834925-e48f8a27ae6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80',
@@ -482,7 +662,10 @@ export const cities: City[] = [
   {
     rank: 60,
     name: 'Brussels',
-    country: 'Belgium',
+    country: {
+      name: 'Belgium',
+      flag: '/countries-flags/be.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1548092304-e0205cb0031b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -490,7 +673,10 @@ export const cities: City[] = [
   {
     rank: 61,
     name: 'Jerusalem',
-    country: 'Israel',
+    country: {
+      name: 'Israel',
+      flag: '/countries-flags/il.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1552423314-cf29ab68ad73?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -498,7 +684,10 @@ export const cities: City[] = [
   {
     rank: 62,
     name: 'Budapest',
-    country: 'Hungary',
+    country: {
+      name: 'Hungary',
+      flag: '/countries-flags/hu.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1565426873118-a17ed65d74b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80',
@@ -506,7 +695,10 @@ export const cities: City[] = [
   {
     rank: 63,
     name: 'Lisbon',
-    country: 'Portugal',
+    country: {
+      name: 'Portugal',
+      flag: '/countries-flags/pt.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1562250883-a18ef907fcab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
@@ -514,7 +706,10 @@ export const cities: City[] = [
   {
     rank: 64,
     name: 'Dammam',
-    country: 'Saudi Arabia',
+    country: {
+      name: 'Saudi Arabia',
+      flag: '/countries-flags/sa.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1588716343972-84e71c55c8fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -522,7 +717,10 @@ export const cities: City[] = [
   {
     rank: 65,
     name: 'Penang Island',
-    country: 'Malaysia',
+    country: {
+      name: 'Malaysia',
+      flag: '/countries-flags/my.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1592878050892-004ab0cd0737?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -530,7 +728,10 @@ export const cities: City[] = [
   {
     rank: 66,
     name: 'Heraklion',
-    country: 'Greece',
+    country: {
+      name: 'Greece',
+      flag: '/countries-flags/gr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1586119732042-ff23ccf4bd23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80',
@@ -538,7 +739,10 @@ export const cities: City[] = [
   {
     rank: 67,
     name: 'Kyoto',
-    country: 'Japan',
+    country: {
+      name: 'Japan',
+      flag: '/countries-flags/jp.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -546,7 +750,10 @@ export const cities: City[] = [
   {
     rank: 68,
     name: 'Zhuhai',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1568001731724-c868c383b0c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80',
@@ -554,7 +761,10 @@ export const cities: City[] = [
   {
     rank: 69,
     name: 'Vancouver',
-    country: 'Canada',
+    country: {
+      name: 'Canada',
+      flag: '/countries-flags/ca.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1559511260-66a654ae982a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1218&q=80',
@@ -562,7 +772,10 @@ export const cities: City[] = [
   {
     rank: 70,
     name: 'Chiang Mai',
-    country: 'Thailand',
+    country: {
+      name: 'Thailand',
+      flag: '/countries-flags/th.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1596622678000-e55d2266ed7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80',
@@ -570,7 +783,10 @@ export const cities: City[] = [
   {
     rank: 71,
     name: 'Copenhagen',
-    country: 'Denmark',
+    country: {
+      name: 'Denmark',
+      flag: '/countries-flags/dk.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -578,7 +794,10 @@ export const cities: City[] = [
   {
     rank: 72,
     name: 'San Francisco',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80',
@@ -586,7 +805,10 @@ export const cities: City[] = [
   {
     rank: 73,
     name: 'Melbourne',
-    country: 'Australia',
+    country: {
+      name: 'Australia',
+      flag: '/countries-flags/au.svg',
+    },
     continentSlug: 'oceania',
     photo:
       'https://images.unsplash.com/photo-1514395462725-fb4566210144?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -594,7 +816,10 @@ export const cities: City[] = [
   {
     rank: 74,
     name: 'Krakow',
-    country: 'Poland',
+    country: {
+      name: 'Poland',
+      flag: '/countries-flags/pl.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1606992894456-799462dacd65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -602,7 +827,10 @@ export const cities: City[] = [
   {
     rank: 75,
     name: 'Marrakech',
-    country: 'Morocco',
+    country: {
+      name: 'Morocco',
+      flag: '/countries-flags/ma.svg',
+    },
     continentSlug: 'africa',
     photo:
       'https://images.unsplash.com/photo-1561642769-1bca263542e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -610,7 +838,10 @@ export const cities: City[] = [
   {
     rank: 76,
     name: 'Kolkatta',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1561891615-a79506c75afe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1167&q=80',
@@ -618,7 +849,10 @@ export const cities: City[] = [
   {
     rank: 77,
     name: 'Cebu',
-    country: 'Philippines',
+    country: {
+      name: 'Philippines',
+      flag: '/countries-flags/ph.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1505449307143-eb99f132e28f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -626,7 +860,10 @@ export const cities: City[] = [
   {
     rank: 78,
     name: 'Auckland',
-    country: 'New Zealand',
+    country: {
+      name: 'New Zealand',
+      flag: '/countries-flags/nz.svg',
+    },
     continentSlug: 'oceania',
     photo:
       'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -634,7 +871,10 @@ export const cities: City[] = [
   {
     rank: 79,
     name: 'Tel Aviv',
-    country: 'Israel',
+    country: {
+      name: 'Israel',
+      flag: '/countries-flags/il.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1500990702037-7620ccb6a60a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -642,7 +882,10 @@ export const cities: City[] = [
   {
     rank: 80,
     name: 'Guilin',
-    country: 'China',
+    country: {
+      name: 'China',
+      flag: '/countries-flags/cn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1537531383496-f4749b8032cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -650,7 +893,10 @@ export const cities: City[] = [
   {
     rank: 81,
     name: 'Honolulu',
-    country: 'US',
+    country: {
+      name: 'US',
+      flag: '/countries-flags/us.svg',
+    },
     continentSlug: 'america-do-norte',
     photo:
       'https://images.unsplash.com/photo-1573992554018-83e7853bd45f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80',
@@ -658,7 +904,10 @@ export const cities: City[] = [
   {
     rank: 82,
     name: 'Hurgada',
-    country: 'Egypt',
+    country: {
+      name: 'Egypt',
+      flag: '/countries-flags/eg.svg',
+    },
     continentSlug: 'africa',
     photo:
       'https://images.unsplash.com/photo-1539768942893-daf53e448371?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -666,7 +915,10 @@ export const cities: City[] = [
   {
     rank: 83,
     name: 'Warsaw',
-    country: 'Poland',
+    country: {
+      name: 'Poland',
+      flag: '/countries-flags/pl.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1519197924294-4ba991a11128?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80',
@@ -674,7 +926,10 @@ export const cities: City[] = [
   {
     rank: 84,
     name: 'Mugla',
-    country: 'Turkey',
+    country: {
+      name: 'Turkey',
+      flag: '/countries-flags/tr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1557156028-90bf9c35e6fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -682,7 +937,10 @@ export const cities: City[] = [
   {
     rank: 85,
     name: 'Buenos Aires City',
-    country: 'Argentina',
+    country: {
+      name: 'Argentina',
+      flag: '/countries-flags/ar.svg',
+    },
     continentSlug: 'america-do-sul',
     photo:
       'https://images.unsplash.com/photo-1589909202802-8f4aadce1849?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80',
@@ -690,7 +948,10 @@ export const cities: City[] = [
   {
     rank: 86,
     name: 'China',
-    country: 'Japan',
+    country: {
+      name: 'Japan',
+      flag: '/countries-flags/jp.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1517309230475-6736d926b979?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -698,7 +959,10 @@ export const cities: City[] = [
   {
     rank: 87,
     name: 'Frankfurt',
-    country: 'Germany',
+    country: {
+      name: 'Germany',
+      flag: '/countries-flags/de.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1577185816322-21f2a92b1342?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -706,7 +970,10 @@ export const cities: City[] = [
   {
     rank: 88,
     name: 'Stockholm',
-    country: 'Sweden',
+    country: {
+      name: 'Sweden',
+      flag: '/countries-flags/se.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1588653818221-2651ec1a6423?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -714,7 +981,10 @@ export const cities: City[] = [
   {
     rank: 89,
     name: 'Lima',
-    country: 'Peru',
+    country: {
+      name: 'Peru',
+      flag: '/countries-flags/pe.svg',
+    },
     continentSlug: 'america-do-sul',
     photo:
       'https://images.unsplash.com/photo-1577587230708-187fdbef4d91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80',
@@ -722,7 +992,10 @@ export const cities: City[] = [
   {
     rank: 90,
     name: 'Da Nang',
-    country: 'Vietnam',
+    country: {
+      name: 'Vietnam',
+      flag: '/countries-flags/vn.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
@@ -730,7 +1003,10 @@ export const cities: City[] = [
   {
     rank: 91,
     name: 'Batam',
-    country: 'Indonesia',
+    country: {
+      name: 'Indonesia',
+      flag: '/countries-flags/id.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1579429768169-95cf18a542e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
@@ -738,7 +1014,10 @@ export const cities: City[] = [
   {
     rank: 92,
     name: 'Nice',
-    country: 'France',
+    country: {
+      name: 'France',
+      flag: '/countries-flags/fr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1562450254-3c4225aa1bcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80',
@@ -746,7 +1025,10 @@ export const cities: City[] = [
   {
     rank: 93,
     name: 'Fukuoka',
-    country: 'Japan',
+    country: {
+      name: 'Japan',
+      flag: '/countries-flags/jp.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1575862924838-c166e3814df7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -754,7 +1036,10 @@ export const cities: City[] = [
   {
     rank: 94,
     name: 'Abu Dhabi',
-    country: 'UAE',
+    country: {
+      name: 'UAE',
+      flag: '/countries-flags/ae.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1602490487033-47e43479d51b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=873&q=80',
@@ -762,7 +1047,10 @@ export const cities: City[] = [
   {
     rank: 95,
     name: 'Jeju',
-    country: 'South Korea',
+    country: {
+      name: 'South Korea',
+      flag: '/countries-flags/kr.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1595737361672-ae84c6ca2298?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -770,7 +1058,10 @@ export const cities: City[] = [
   {
     rank: 96,
     name: 'Porto',
-    country: 'Portugal',
+    country: {
+      name: 'Portugal',
+      flag: '/countries-flags/pt.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1577958194277-7b3bc213b03c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1330&q=80',
@@ -778,7 +1069,10 @@ export const cities: City[] = [
   {
     rank: 97,
     name: 'Rhodes',
-    country: 'Greece',
+    country: {
+      name: 'Greece',
+      flag: '/countries-flags/gr.svg',
+    },
     continentSlug: 'europa',
     photo:
       'https://images.unsplash.com/photo-1572375901777-1b257481cbb0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=743&q=80',
@@ -786,7 +1080,10 @@ export const cities: City[] = [
   {
     rank: 98,
     name: 'Rio de Janeiro',
-    country: 'Brazil',
+    country: {
+      name: 'Brazil',
+      flag: '/countries-flags/br.svg',
+    },
     continentSlug: 'america-do-sul',
     photo:
       'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
@@ -794,7 +1091,10 @@ export const cities: City[] = [
   {
     rank: 99,
     name: 'Krabi',
-    country: 'Thailand',
+    country: {
+      name: 'Thailand',
+      flag: '/countries-flags/th.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1139&q=80',
@@ -802,7 +1102,10 @@ export const cities: City[] = [
   {
     rank: 100,
     name: 'Bangalore',
-    country: 'India',
+    country: {
+      name: 'India',
+      flag: '/countries-flags/in.svg',
+    },
     continentSlug: 'asia',
     photo:
       'https://images.unsplash.com/photo-1580060092295-dbe639fffda3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=698&q=80',

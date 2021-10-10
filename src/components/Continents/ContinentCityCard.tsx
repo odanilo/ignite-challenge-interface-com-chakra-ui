@@ -3,7 +3,10 @@ import { Heading, Flex, Box, ListItem, Text, Avatar } from '@chakra-ui/react';
 
 interface ContinentCityCardProps {
   name: string;
-  country: string;
+  country: {
+    name: string;
+    flag: string;
+  };
   photo: string;
 }
 
@@ -42,10 +45,15 @@ export function ContinentCityCard({
               {name}
             </Heading>
             <Text color="info.dark" mt="3">
-              {country}
+              {country.name}
             </Text>
           </Box>
-          <Avatar name={country} size="sm" ml="1"></Avatar>
+          <Avatar
+            src={country.flag}
+            name={country.name}
+            size="sm"
+            ml="1"
+          ></Avatar>
         </Flex>
       </Box>
     </ListItem>
