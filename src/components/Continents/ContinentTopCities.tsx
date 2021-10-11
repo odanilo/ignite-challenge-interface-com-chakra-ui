@@ -1,4 +1,4 @@
-import { Heading, Box, List, Grid } from '@chakra-ui/react';
+import { Heading, Box, List, ListItem, Grid } from '@chakra-ui/react';
 import { City } from '../../services/mirage/cities';
 import { ContinentCityCard } from './ContinentCityCard';
 
@@ -32,12 +32,9 @@ export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
           justifyContent={['center', 'center', 'space-between']}
         >
           {cities.map(({ country, name, photo }) => (
-            <ContinentCityCard
-              key={name}
-              country={country}
-              name={name}
-              photo={photo}
-            />
+            <ListItem key={name}>
+              <ContinentCityCard country={country} name={name} photo={photo} />
+            </ListItem>
           ))}
         </Grid>
       </List>
