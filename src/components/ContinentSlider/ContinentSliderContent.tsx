@@ -18,7 +18,7 @@ interface Continent {
 }
 
 interface ContinentSliderContentProps {
-  continents: Continent[];
+  continents: Continent[] | null;
 }
 
 export function ContinentSliderContent({
@@ -37,7 +37,7 @@ export function ContinentSliderContent({
         pagination={{ clickable: true }}
         navigation
       >
-        {continents.map((continent, index) => (
+        {continents?.map((continent, index) => (
           <SwiperSlide key={continent.id} virtualIndex={index}>
             <ContinentSliderItem continent={continent} slideIndex={index} />
           </SwiperSlide>
