@@ -7,6 +7,10 @@ interface ContinentTopCitiesProps {
 }
 
 export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
+  const citiesDesktopBoxPerRow = 4;
+  const citiesDesktopBoxAlign =
+    cities.length < citiesDesktopBoxPerRow ? 'flex-start' : 'space-between';
+
   return (
     <Box
       as="main"
@@ -29,7 +33,7 @@ export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
         <Grid
           gap={['5', '5', '6']}
           templateColumns="repeat(auto-fit, 256px)"
-          justifyContent={['center', 'center', 'space-between']}
+          justifyContent={['center', 'center', citiesDesktopBoxAlign]}
         >
           {cities.map(({ country, name, photo }) => (
             <ListItem key={name}>
