@@ -1,8 +1,9 @@
 import { Box, Divider, Heading } from '@chakra-ui/react';
+import { Wrapper } from '../Wrapper';
 
 export function ContinentSliderHeader() {
   return (
-    <Box as="header" maxW={1160} mx="auto" px={['4', '7']}>
+    <Wrapper hasFlex={false} as="header">
       <Divider
         maxW={['60px', '90px']}
         mx="auto"
@@ -21,6 +22,6 @@ export function ContinentSliderHeader() {
         <br />
         Então escolha seu continente
       </Heading>
-    </Box>
+    </Wrapper>
   );
 }

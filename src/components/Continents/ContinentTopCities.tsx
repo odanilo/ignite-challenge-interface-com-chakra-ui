@@ -1,5 +1,6 @@
 import { Heading, Box, List, ListItem, Grid } from '@chakra-ui/react';
 import { City } from '../../services/mirage/cities';
+import { Wrapper } from '../Wrapper';
 import { ContinentCityCard } from './ContinentCityCard';
 
 interface ContinentTopCitiesProps {
@@ -12,14 +13,11 @@ export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
     cities.length < citiesDesktopBoxPerRow ? 'flex-start' : 'space-between';
 
   return (
-    <Box
+    <Wrapper
+      hasFlex={false}
       as="main"
-      px={['4', '4', '7']}
-      maxW={1160}
-      mx="auto"
       mt={['8', '8', '20']}
       mb={['4', '4', '9']}
-      w="100%"
     >
       <Heading
         as="h2"
@@ -42,6 +40,6 @@ export function ContinentTopCities({ cities }: ContinentTopCitiesProps) {
           ))}
         </Grid>
       </List>
-    </Box>
+    </Wrapper>
   );
 }

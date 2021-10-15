@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Flex, Heading, Text, Link as ChakraLink } from '@chakra-ui/react';
+import { Wrapper } from '../Wrapper';
 
 interface Continent {
   summary: string;
@@ -45,15 +46,12 @@ export function ContinentSliderItem({
               opacity="0.5"
             ></Flex>
           </Flex>
-          <Flex
+          <Wrapper
             align="center"
-            pos="relative"
             color="white"
             flexDir="column"
             justify="center"
-            width="100%"
-            maxW={1160}
-            mx="auto"
+            pos="relative"
             px={['14', '17']}
           >
             <Heading
@@ -68,7 +66,7 @@ export function ContinentSliderItem({
             <Text color="info.light" fontSize={['md', '2xl']} fontWeight="bold">
               {continent.summary}
             </Text>
-          </Flex>
+          </Wrapper>
         </ChakraLink>
       </Link>
     </Flex>

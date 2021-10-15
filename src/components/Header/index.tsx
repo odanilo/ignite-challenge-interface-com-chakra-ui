@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { Wrapper } from '../Wrapper';
 import { HeaderNav } from './HeaderNav';
 import { LogoNav } from './LogoNav';
 
@@ -8,9 +9,9 @@ export function Header() {
   const isHomePage = asPath === '/';
 
   return (
-    <Flex p={['4', '7']} align="center" justify="center" maxW={1160} mx="auto">
+    <Wrapper align="center" justify="center" py={['4', '7']}>
       {!isHomePage && <HeaderNav />}
       <LogoNav isHomePage={isHomePage} />
-    </Flex>
+    </Wrapper>
   );
 }

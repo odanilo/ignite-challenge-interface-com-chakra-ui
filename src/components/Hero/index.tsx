@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 import { HeroText } from './HeroText';
 import { HeroIllustration } from './HeroIllustration';
+import { Wrapper } from '../Wrapper';
 
 export function Hero() {
   const shouldShowAirplane = useBreakpointValue({
@@ -14,16 +15,10 @@ export function Hero() {
       <Box pointerEvents="none">
         <Image src="/background-hero.jpg" layout="fill" alt="background" />
       </Box>
-      <Flex
-        maxW={1160}
-        mx="auto"
-        px={['4', '7']}
-        width="100%"
-        justifyContent="space-between"
-      >
+      <Wrapper justifyContent="space-between">
         <HeroText />
         <HeroIllustration isVisible={shouldShowAirplane} />
-      </Flex>
+      </Wrapper>
     </Flex>
   );
 }

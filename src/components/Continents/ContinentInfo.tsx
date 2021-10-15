@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import { Continent } from '../../pages/continentes/[slug]';
 import { City } from '../../services/mirage/cities';
+import { Wrapper } from '../Wrapper';
 import { ContinentDescription } from './ContinentDescription';
 import { ContinentStats } from './ContinentStats';
 
@@ -11,13 +12,10 @@ interface ContinentInfoProps {
 
 export function ContinentInfo({ continent, cities }: ContinentInfoProps) {
   return (
-    <Flex
+    <Wrapper
       direction={['column', 'column', 'row']}
-      px={['4', '4', '7']}
-      maxW={1160}
-      mx="auto"
-      mt={['6', '6', '20']}
       justify={['flex-start', 'flex-start', 'space-between']}
+      mt={['6', '6', '20']}
     >
       <ContinentDescription description={continent.description} />
       <ContinentStats
@@ -25,6 +23,6 @@ export function ContinentInfo({ continent, cities }: ContinentInfoProps) {
         languagesAmount={continent.languages_amount}
         topCitiesAmount={cities.length}
       />
-    </Flex>
+    </Wrapper>
   );
 }

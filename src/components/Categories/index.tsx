@@ -1,4 +1,5 @@
 import { Flex } from '@chakra-ui/react';
+import { Wrapper } from '../Wrapper';
 import { CategoriesList } from './CategoriesList';
 
 const data = [
@@ -26,15 +27,8 @@ const data = [
 
 export function Categories() {
   return (
-    <Flex
-      as="section"
-      maxW={1160}
-      mx="auto"
-      mt={['9', '24']}
-      px={['4', '7']}
-      justifyContent="center"
-    >
+    <Wrapper as="section" justifyContent="center" mt={['9', '24']}>
       <CategoriesList categories={data} />
-    </Flex>
+    </Wrapper>
   );
 }
